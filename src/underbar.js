@@ -129,9 +129,7 @@
     // the members, it also maintains an array of results.
 
     var transformedArr = [];
-    for (var i = 0; i < collection.length; i++) {
-      transformedArr.push(iterator(collection[i]));
-    }
+    _.each(collection, function(item) {transformedArr.push(iterator(item));});
     return transformedArr;
   };
 
